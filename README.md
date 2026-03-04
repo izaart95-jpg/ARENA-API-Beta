@@ -6,8 +6,8 @@
 
 ## Quickstart - Install Dependencies
 ```bash
-git clone https://github.com/izaart95-jpg/ARENA-API-Beta.git
-cd ARENA-API-Beta
+git clone https://github.com/izaart95-jpg/Arena-Api-Bridge.git
+cd Arena-Api-Bridge
 pip install -r requirements.txt
 playwright install chromium
 ```
@@ -25,6 +25,8 @@ it is recommended to install Rektcaptcha Extensions Turn Extensions=True and con
 Extensions_dir to extensions folder so you can use v2 harvester as fallback 
 
 Start `arena_token.py` and wait for browser to be initialised open http://localhost:5000 in browser and  start v3 
+
+Recommended Browser Overall For Arena_token.py is Brave
 
 Now you can run main.py 
 
