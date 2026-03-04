@@ -148,6 +148,6 @@ Required when `COOKIES=True`. Retrieve these values from your browser's DevTools
 ### Camoufox_harvester 
 ####  Usage:
 ```bash  
-    pip install "camoufox[geoip]" browserforge fastapi uvicorn
+    pip install camoufox[geoip] browserforge fastapi uvicorn
     camoufox fetch                  # download Firefox binary once
     python camoufox_harvester.py
