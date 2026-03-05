@@ -16,7 +16,9 @@ By the way its still experimental and only recommended as fallback or testing
 
 #### [GLM-Bridge - GLM API Bridge](https://github.com/izaart95-jpg/GLM-Bridge)
 
-## Quickstart - Install Dependencies
+---
+
+## 1. Quickstart - Install Dependencies
 ```bash
 git clone https://github.com/izaart95-jpg/Arena-Api-Bridge.git
 cd Arena-Api-Bridge
@@ -26,9 +28,9 @@ playwright install chromium
 
 ---
 
-### Note - arena_token.py is recommended over camoufox_harvester also camoufox_harvester is experimental 
+#### Note - arena_token.py is recommended over camoufox_harvester also camoufox_harvester is experimental 
 
-## Configuration
+## 2. Configuration
 
 Open `arena_token.py` and edit the configuration block at the top of the file.
 
@@ -42,7 +44,7 @@ Recommended Browser Overall For Arena_token.py is Brave
 
 Now you can run main.py 
 
-## Usage & Features - If you are having problems
+## 3. Usage & Features - If you are having problems
 
 📺 [Watch the usage walkthrough on YouTube](https://youtu.be/hPmg9oMS3e8)
 
@@ -50,7 +52,7 @@ Now you can run main.py
 
 Use Lmarena Credentials From Video To Test Quickly or First Time
 
-### Flags
+### 4. Flags
 
 | Flag | Description | Default |
 |------|-------------|---------|
@@ -64,7 +66,7 @@ Use Lmarena Credentials From Video To Test Quickly or First Time
 
 > ⚠️ **Compatibility note:** `AUTO_LOGIN=True` and `COOKIES=True` are mutually exclusive. An error is raised at startup if both are enabled simultaneously.
 
-### Parameters
+### 5. Parameters
 
 | Parameter | Description |
 |-----------|-------------|
@@ -76,7 +78,7 @@ Use Lmarena Credentials From Video To Test Quickly or First Time
 
 ---
 
-## Parameter Reference
+## 6. Parameter Reference
 
 ### `PATH` — Browser Executable
 
@@ -104,7 +106,7 @@ Navigate to `chrome://version` in your browser and copy the **Executable Path** 
 
 ---
 
-### `EXTENSIONS_DIR` — Extensions Directory
+### 7. `EXTENSIONS_DIR` — Extensions Directory
 
 Required when `EXTENSIONS=True`. To locate it:
 
@@ -130,7 +132,7 @@ Required when `EXTENSIONS=True`. To locate it:
 
 ---
 
-### `PROFILE_PATH` — Browser Profile Directory
+### 8. `PROFILE_PATH` — Browser Profile Directory
 
 Required when `CUS_PROFILE=True`. All contexts will use this directory as `user_data_dir` instead of the auto-generated `harvester_profiles/` directories.
 
@@ -147,7 +149,7 @@ Required when `CUS_PROFILE=True`. All contexts will use this directory as `user_
 
 ---
 
-### `COOKIE_V1` / `COOKIE_V2` — Auth Cookies
+### 9. `COOKIE_V1` / `COOKIE_V2` — Auth Cookies
 
 Required when `COOKIES=True`. Retrieve these values from your browser's DevTools under the **Application → Cookies** tab.
 
@@ -160,7 +162,7 @@ Required when `COOKIES=True`. Retrieve these values from your browser's DevTools
 
 ---
 
-### Camoufox_harvester 
+### 10. Camoufox_harvester 
 ####  Usage:
 ```bash  
     pip install camoufox[geoip] browserforge fastapi uvicorn
