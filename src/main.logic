@@ -1,6 +1,6 @@
-const EVAL_ID = prompt("Enter EVAL_ID:");
+const EVAL_ID = "";
 const MODEL_A_ID = "019a98f7-afcd-779f-8dcb-856cc3b3f078";
-const toki = prompt("Paste recaptchaV3Token:");
+
 
 const payload = {
   id: EVAL_ID,
@@ -17,11 +17,11 @@ const payload = {
 
   modality: "chat",
 
-  recaptchaV3Token: toki
+  recaptchaV3Token: ""
 };
 
 const res = await fetch(
-  `https://lmarena.ai/nextjs-api/stream/post-to-evaluation/${EVAL_ID}`,
+  `https://arena.ai/nextjs-api/stream/post-to-evaluation/${EVAL_ID}`,
   {
     method: "POST",
     mode: "cors",
@@ -30,7 +30,7 @@ const res = await fetch(
       "accept": "*/*",
       "content-type": "text/plain;charset=UTF-8"
     },
-    referrer: `https://lmarena.ai/c/${EVAL_ID}`,
+    referrer: `https://arena.ai/c/${EVAL_ID}`,
     body: JSON.stringify(payload)
   }
 );
